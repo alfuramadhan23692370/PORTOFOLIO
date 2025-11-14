@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Saya | Portfolio Alfu</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* CSS dasar untuk membuat tampilan lebih rapi */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            color: #007BFF;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Penting untuk padding agar tidak melebihi lebar */
+        }
+        form textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        .contact-info {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .social-links a {
+            margin-right: 15px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+  <h1>Alfu Ramadhan</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="project.html">Proyek</a></li>
+      <li><a href="contact.html">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+    <section id="contact" class="container">
+        <h2>Hubungi Saya</h2>
+        <p style="text-align: center;">Saya terbuka untuk peluang kerja, proyek kolaborasi, atau sekadar berdiskusi. Silakan tinggalkan pesan!</p>
+
+        <form action="#" method="POST"> 
+            
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Alamat Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subjek:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Pesan Anda:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Kirim Pesan</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Informasi Kontak Lain</h3>
+            <p><strong>Email Utama:</strong> <a href="mailto:alfu.developer@email.com">alfu.developer@email.com</a></p>
+            <p><strong>Telepon/WhatsApp:</strong> +62 812-XXXX-XXXX</p>
+
+            <h4 style="margin-top: 15px;">Tautan Sosial</h4>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/alfu" target="_blank">LinkedIn</a>
+                <a href="https://github.com/alfu-dev" target="_blank">GitHub</a>
+                <a href="https://twitter.com/alfu_dev" target="_blank">Twitter</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alfu. Semua Hak Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
