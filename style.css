@@ -1,188 +1,146 @@
-/* Reset dasar */
+/* ---------- RESET ---------- */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ---------- BODY ---------- */
 body {
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-  background-color: #f8fafc;
-  line-height: 1.6;
+    background: #f6f7fb;
+    color: #333;
+    line-height: 1.6;
+    padding-bottom: 50px;
 }
 
-/* Header */
+/* ---------- NAVBAR ---------- */
+nav {
+    width: 100%;
+    background: #1a1a1a;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #00c3ff;
+}
+
+/* ---------- HEADER ---------- */
 header {
-  background: #0f172a;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    margin-top: 100px;
+    text-align: center;
+    padding: 40px;
 }
 
 header h1 {
-  font-size: 1.5em;
+    font-size: 40px;
+    color: #1f1f1f;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
+header p {
+    font-size: 18px;
+    color: #555;
 }
 
-nav ul li {
-  margin-left: 20px;
+/* ---------- SECTION ---------- */
+section {
+    padding: 40px 50px;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
 }
 
-nav ul li a:hover {
-  color: #38bdf8;
+/* ---------- CARD PROJECT ---------- */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-/* Hero Section */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #1e3a8a, #0ea5e9);
-  color: white;
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
-.hero h2 span {
-  color: #facc15;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.btn {
-  display: inline-block;
-  background: #38bdf8;
-  color: #fff;
-  padding: 10px 20px;
-  margin-top: 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background 0.3s;
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.btn:hover {
-  background: #0ea5e9;
+.card h3 {
+    margin-bottom: 10px;
 }
 
-/* Tentang */
-.about, .projects, .contact {
-  padding: 60px 20px;
-  text-align: center;
+/* ---------- CONTACT FORM ---------- */
+form {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Proyek */
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #bbb;
+    outline: none;
 }
 
-.project-card {
-  background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
+button {
+    background: #1a73e8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
 }
 
-.project-card:hover {
-  transform: scale(1.05);
+button:hover {
+    background: #0d52ae;
 }
 
-/* Kontak */
-.contact form {
-  display: flex;
-  flex-direction: column;
-  max-width: 400px;
-  margin: 20px auto;
-}
-
-.contact input, .contact textarea {
-  margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-/* Footer */
+/* ---------- FOOTER ---------- */
 footer {
-  background: #0f172a;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-}
-/* Halaman Tentang */
-.about-page {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.profile-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.about-text {
-  max-width: 600px;
-  text-align: left;
-}
-
-.about-text h2 {
-  color: #0f172a;
-  margin-bottom: 10px;
-}
-
-.skills {
-  background: #f1f5f9;
-  padding: 40px 20px;
-  border-radius: 15px;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.skills h2 {
-  margin-bottom: 20px;
-}
-
-.skills ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skills ul li {
-  background: #fff;
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
-}
-
-.skills ul li:hover {
-  transform: scale(1.05);
+    margin-top: 40px;
+    text-align: center;
+    padding: 15px;
+    background: #1a1a1a;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
